@@ -1,8 +1,8 @@
-// $(document).ready(function () {
-//     $.getJSON('data.json', function (response) {
-//         handleJSON(response);
-//     });
-// });
+$(document).ready(function () {
+    $.getJSON('data.json', function (response) {
+        handleJSON(response);
+    });
+});
 
 
 function getElement(string,type="H1"){
@@ -19,4 +19,4 @@ function handleJSON(json){
     document.body.appendChild(getElement(`Last Update ${json.UpdatedAt}`,"H3"))
 }
 
-handleJSON({"InzOP": 44, "SysInf": 7, "UpdatedAt": "Wed Dec  5 16:17:42 2018"})
+// handleJSON({"InzOP": 44, "SysInf": 7, "UpdatedAt": "Wed Dec  5 16:17:42 2018"})
