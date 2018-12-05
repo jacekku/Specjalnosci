@@ -1,3 +1,5 @@
-$.getJSON("data.json", function(json) {
-    document.write(json); // this will show the info it in firebug console
+$(document).ready(function () {
+    $.getJSON('data.json', function (response) {
+        console.log(response);
+    });
 });
